@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*operation)(int, int);
+
 	if (argc != 4)
 	{
 
@@ -23,9 +24,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	operation  = get_op_func(argv[2]);
+	operation = get_op_func(argv[2]);
 
-	if (operation ==  NULL)
+	if (operation == NULL)
 	{
 		printf("Error\n");
 		exist(99);
